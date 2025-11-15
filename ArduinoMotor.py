@@ -3,8 +3,8 @@ import time
 from Adafruit_IO import MQTTClient
 from Adafruit_IO import Client
 
-ADAFRUIT_IO_USERNAME = "eddie0910"
-ADAFRUIT_IO_KEY = "aio_BQwS231ZhFJTmSYPwfn5eFH6t1Mz"
+ADAFRUIT_IO_USERNAME = ###
+ADAFRUIT_IO_KEY = ###
 openBoxFeed = "open-box"
 
 def connected(client):
@@ -29,3 +29,4 @@ while True:
         time.sleep(2)
         board.digital[9].write(0)
         aio.send_data(openBoxFeed, 0)
+
